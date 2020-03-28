@@ -1,3 +1,4 @@
+setuptools
 pandas
 scikit-learn
 scipy
