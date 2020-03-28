@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         openssh-server  vim      
 RUN add-apt-repository ppa:deadsnakes/ppa &&  \
         apt-get install -y --no-install-recommends python3.7  \
-        python3-pip python-dev python-setuptools && \
+        python3-pip python-dev python3-setuptools && \
         rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/run/sshd
