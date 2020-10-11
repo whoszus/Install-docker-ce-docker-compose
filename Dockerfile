@@ -3,7 +3,7 @@ FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         software-properties-common\
-        openssh-server  vim  git   iputils-ping
+        openssh-server  vim  git   iputils-ping wget curl
 RUN add-apt-repository ppa:deadsnakes/ppa &&  \
         apt-get install -y --no-install-recommends python3.7  \
         python3-pip python-dev python3-setuptools && \
