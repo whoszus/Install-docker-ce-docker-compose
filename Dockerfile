@@ -3,7 +3,7 @@ FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         software-properties-common\
-        openssh-server  vim      
+        openssh-server  vim  git   iputils-ping
 RUN add-apt-repository ppa:deadsnakes/ppa &&  \
         apt-get install -y --no-install-recommends python3.7  \
         python3-pip python-dev python3-setuptools && \
@@ -19,7 +19,7 @@ RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config &&\
 
 COPY requirements.txt .
 RUN pip3 install -r ./requirements.txt
-
+ENV LANG C.UTF-8
 EXPOSE 22 8888 80
 CMD    ["/usr/sbin/sshd", "-D"]
 

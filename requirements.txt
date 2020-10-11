@@ -10,3 +10,5 @@ torch
 torchvision
 tqdm
 jupyter
+matplotlib
+seaborn
