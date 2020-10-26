@@ -5,6 +5,7 @@ docker run -d -p 9000:9000  --name portainer --restart always -v /var/run/docker
 
 ## install nvdia docker 
 echo "install drivers "
+apt install ubuntu-drivers-common;
 ubuntu-drivers autoinstall
 
 echo "installing nvdia docker "
