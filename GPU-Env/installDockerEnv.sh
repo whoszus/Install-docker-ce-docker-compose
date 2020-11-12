@@ -8,7 +8,7 @@ echo "install drivers "
 apt install ubuntu-drivers-common;
 ubuntu-drivers autoinstall
 
-echo "installing nvdia docker "
+echo "installing nvidia docker"
 apt-get install -y gcc && apt-get install make ;
 apt-get install linux-headers-$(uname -r);
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID);
