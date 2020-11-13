@@ -1,0 +1,14 @@
+setuptools
+pandas
+scikit-learn
+scipy
+tensorboard
+tensorboardX
+tensorflow
+tensorflow-estimator
+torch
+torchvision
+tqdm
+jupyter
+matplotlib
+seaborn
