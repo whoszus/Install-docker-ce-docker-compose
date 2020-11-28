@@ -1,6 +1,7 @@
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
 COPY ./sources.list /etc/apt/sources.list
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8
 RUN rm -Rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
