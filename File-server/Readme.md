@@ -7,6 +7,6 @@
 docker build
 
 ~~~
-apt-get install luarocks
+
 ~~~
 
