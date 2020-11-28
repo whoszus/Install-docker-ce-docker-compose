@@ -1,6 +1,7 @@
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
-RUN sed -i "s@http://deb.debian.org@http://mirrors.aliyun.com@g" /etc/apt/sources.list && rm -Rf /var/lib/apt/lists/* && apt-get update
+COPY ./sources.list /etc/apt/sources.list
+RUN rm -Rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         software-properties-common\
