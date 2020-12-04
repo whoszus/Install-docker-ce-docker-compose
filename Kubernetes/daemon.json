@@ -1,6 +1,5 @@
 {
-    "data-root": "/data/DockerRootDir",
     "insecure-registries" : [
-        "up-liger"
+        "172.169.8.190"
     ]
 }

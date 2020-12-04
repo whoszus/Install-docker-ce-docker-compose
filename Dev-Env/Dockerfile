@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+FROM ubuntu:18.04
 
 COPY ./sources.list /etc/apt/sources.list
 
@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         software-properties-common\
         openssh-server  vim  git   iputils-ping wget curl
 RUN add-apt-repository ppa:deadsnakes/ppa &&  \
-        apt-get install -y --no-install-recommends python3.7  \
+        apt-get install -y --no-install-recommends python3.8  \
         python3-pip python-dev python3-setuptools && \
         rm -rf /var/lib/apt/lists/*
 
