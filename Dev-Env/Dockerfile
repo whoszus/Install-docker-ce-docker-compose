@@ -17,7 +17,7 @@ RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config &&\
 
 
 COPY requirements.txt .
-RUN pip3 install -r ./requirements.txt
+
 ENV LANG=zh_CN.UTF-8 LANGUAGE=zh_CN.UTF-8 LC_ALL=zh_CN.UTF-8
 CMD    ["/usr/sbin/sshd", "-D"]
 
