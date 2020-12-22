@@ -100,7 +100,7 @@ check_compose(){
 check_git
 check_curl
 check_docker
-check_compose
+#check_compose
 
 
 exit 0;
