@@ -17,11 +17,11 @@ cd Install-docker-ce-docker-compose && chmod +x *.sh
 #### 3. Run script:
 ```shell
    # install docker-ce and docker compose
-   ./install.sh
+   ./1-install.sh
    # Nvidia Drivers ,notice that here will rebot you device
-   ./installNvidiaDriver.sh
+   ./2-installNvidiaDriver.sh
    # if you have a bigdrive mount on /data,this scrpit will mv the docker root to /data ,or plz edit the script 
-   ./installDockerEnv.sh
+   ./3-installDockerEnv.sh
 ```
 
 ### How to use it

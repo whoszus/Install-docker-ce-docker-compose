@@ -25,3 +25,7 @@ systemctl restart docker;
 echo "172.169.8.254 tinker.siat.ac.cn" >> /etc/hosts;
 mkdir -p /etc/docker/certs.d/tinker.siat.ac.cn && cd /etc/docker/certs.d/tinker.siat.ac.cn && \
 wget http://tinker.siat.ac.cn:10000/files/shares/ca.crt --no-check-certificate;
+
+
+#docker login tinker.siat.ac.cn
+#docker run --name=GPU-gjj -p 38000:22 --gpus '"device=all"' -d tinker.siat.ac.cn/tinker/gjj-docker
